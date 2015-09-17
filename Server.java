@@ -60,7 +60,7 @@ public Server(int port) {
                 br2 = new BufferedReader(new   InputStreamReader(socket.getInputStream()));
                 out = br2.readLine();
 				if (out.compareTo("1") == 0) {
-					System.out.println ("akan mengirim file A");
+					System.out.println ("..is going to send file A");
 					//pr2.println ("Server"+ in2);
 					// send file
 					myFile = new File (FILE_A);
@@ -76,7 +76,7 @@ public Server(int port) {
 				}
 				else {
 					if (out.compareTo("2") == 0) {
-						System.out.println ("akan mengirim file B");
+						System.out.println ("..is going to send file B");
 						//in2 = " akan mengirim file B";
 						// send file
 						myFile = new File (FILE_B);
@@ -92,7 +92,7 @@ public Server(int port) {
 					}
 					else {
 						if (out.compareTo("3") == 0) {
-							System.out.println ("akan mengirim file C");
+							System.out.println ("..is going to send file C");
 							//in2 = " akan mengirim file C";
 							// send file
 							myFile = new File (FILE_C);
@@ -108,8 +108,8 @@ public Server(int port) {
 						}
 						else {
 							if (out.compareTo("END") != 0) {
-								System.out.println ("Masukan salah");
-								in2 = " tidak dapat memproses permintaan, harap ulang";
+								System.out.println ("Wrong input");
+								in2 = " can't process the request, please try again";
 								pr2.println ("Server"+in2);
 							}
 						}
