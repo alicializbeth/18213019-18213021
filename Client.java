@@ -37,7 +37,7 @@ public Client(String serverip, int port) {
         t1 = new Thread(this);
         t2 = new Thread(this);
         socket = new Socket(serverip, port);
-		System.out.println ("Ketik 1/2/3 untuk memilih file yang diinginkan: 1) A.txt; 2) B.txt; 3) C.txt");
+		System.out.println ("Type 1/2/3 to choose the wanted file: 1) A.txt; 2) B.txt; 3) C.txt");
         t1.start();
         t2.start();
     } catch (Exception e) {
