@@ -37,5 +37,5 @@ Bandung Institute of Techonology
     2. Parse / extract all hyperlinks on the web
     3. Download all parses on those hyperlinks
     
-    NB: in order to run the file, user should install jsoup library and run the file on the terminal with the path of the jar written on the command line.
+    NB: in order to run the file, user should install jsoup library and run the file with the path of the jar written on the command line (only if it's run on the terminal).
     
