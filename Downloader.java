@@ -43,7 +43,7 @@ public class Downloader {
 	for (Element link : links) {
 		url1 = new URL (link.attr("abs:href"));
 		namafile = "data"+i+".html";
-		System.out.println(" * a: <" + link.attr("abs:href") + ">  (" + trim(link.text(), 35) +")");
+		System.out.println(" * a: <" + link.attr("abs:href") + ">");
 		reader = new BufferedReader(new InputStreamReader(url1.openStream()));
 		writer = new BufferedWriter(new FileWriter(namafile));
 		while ((line = reader.readLine()) != null) {
