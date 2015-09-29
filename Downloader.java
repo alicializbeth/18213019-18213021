@@ -1,6 +1,7 @@
 /* 3rd Integrative Programming Assignment of Alicia Lizbeth (18213019) and Eveline Purnomo (18213021) */
 /* source: http://www.tutorialspoint.com/javaexamples/net_webpage.htm */
 /* source2: jsoup.org/cookbook/extracting-data/example-list-links */
+/* note for 3rd functionality (to download all pages linked to the first url): each page is saved as data1.html, data2.html, and so on */
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -21,7 +22,7 @@ public class Downloader {
 	Validate.isTrue(args.length == 1, "usage: supply url to fetch");
 	String url = args[0];
 	URL url1 = new URL( args[0] );
-	System.out.print("Fetching %s..."+ url);
+	System.out.println("Fetching %s..."+ url);
         Document doc = Jsoup.connect(url).get();
         Elements links = doc.select("a[href]");
         Elements media = doc.select("[src]");
@@ -42,7 +43,7 @@ public class Downloader {
 	for (Element link : links) {
 		url1 = new URL (link.attr("abs:href"));
 		namafile = "data"+i+".html";
-		print(" * a: <%s>  (%s)", link.attr("abs:href"), trim(link.text(), 35));
+		System.out.println(" * a: <" + link.attr("abs:href") + ">  (" + trim(link.text(), 35) +")");
 		reader = new BufferedReader(new InputStreamReader(url1.openStream()));
 		writer = new BufferedWriter(new FileWriter(namafile));
 		while ((line = reader.readLine()) != null) {
