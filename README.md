@@ -32,7 +32,7 @@ Bandung Institute of Techonology
     Date released: Tuesday, Sept 29th 2015
     File names: Downloader.java
     Detail processes:
-    The code had been modified to be abble to do these tasks:
+    The code had been modified to be able to do these tasks below:
     1. Download a web page
     2. Parse / extract all hyperlinks on the web
     3. Download all parses on those hyperlinks
