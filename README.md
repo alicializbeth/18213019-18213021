@@ -27,3 +27,15 @@ Bandung Institute of Techonology
     (The received files will be repositored at the same folder with the location of Client.java)
     
     NB: A.txt, B.txt, and C.txt on this repository are the test files for the 2nd assignment.
+
+(c) Exercise III
+    Date released: Tuesday, Sept 29th 2015
+    File names: Downloader.java
+    Detail processes:
+    The code had been modified to be abble to do these tasks:
+    1. Download a web page
+    2. Parse / extract all hyperlinks on the web
+    3. Download all parses on those hyperlinks
+    
+    NB: in order to run the file, user should install jsoup library and run the file on the terminal with the path of the jar written on the command line.
+    
