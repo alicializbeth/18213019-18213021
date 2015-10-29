@@ -43,15 +43,15 @@ Bandung Institute of Techonology
     Date released: Friday, Oct 23th 2015
     File names: imgdownloader.py & UTS.sh
 
-    A script which is able to download all images with .jpg format on a web page. Every downloaded image will be backed up       automatically to another directory in the computer. The backup process will utilize rsync that is combined with python,      shell scripting as well.
+    A script which is able to download all images with .jpg format on a web page. 
+    Every downloaded image will be backed up automatically to another directory in the computer. 
+    The backup process will utilize rsync that is combined with python, shell scripting as well.
     
-    <b>Requirement Environment and Library</b>
-    In order to run the program, user should install:
+    Requirement Environment and Library
         1.	Python
             BeautifulSoup library.
         2.	Shell Scripting
             -	cwRsync
-                 A packaging of Rsync for Windows with a client GUI that is used for fast remote file backup and                              synchronization.
             -	Gow
             -	Node.js
             -	Wget64
