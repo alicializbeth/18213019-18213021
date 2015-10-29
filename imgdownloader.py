@@ -34,7 +34,7 @@ counter = len(os.listdir('image'))+1
 path = os.getcwd() + '/image'
 
 #calling downloader method to download
-#print the link of all image resouces
+#print the link of all image resources
 for tag in tags:
 	os.chdir(path)
 	urlName1 = tag['src']
