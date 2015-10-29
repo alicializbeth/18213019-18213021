@@ -7,6 +7,7 @@ import re
 from BeautifulSoup import BeautifulSoup
 import socket
 import os
+import subprocess
 
 #define jpg downloader
 def download_image(url,imgName):
@@ -41,3 +42,8 @@ for tag in tags:
 	print urlName1
 	download_image(urlName1, imgName1)	
 	counter = counter + 1
+
+#backup files to local directory using rsync
+backuppath = "/home/alicia/Documents/backup" #change the backup path accordingly
+subprocess.call(["ls", "-l"])
+subprocess.call(["rsync", "-ravz", "--progress","./", backuppath])
