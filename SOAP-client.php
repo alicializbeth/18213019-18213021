@@ -1,6 +1,6 @@
 /* SOAP-client.php
 3rd Integrative Programming Assignment
-by: Alicia Lizbeth (18213019) and Eveline Purnomo (18213021)
+by: Alicia Lizbeth (18213019) and Eveline Purnomo (18213021)*/
 
 <?php
 	$opt = array ('location'=>'http://localhost/Progif/SOAP-server.php',
