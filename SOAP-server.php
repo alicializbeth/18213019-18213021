@@ -1,3 +1,7 @@
+/* SOAP-server.php
+3rd Integrative Programming Assignment
+by: Alicia Lizbeth (18213019) and Eveline Purnomo (18213021)*/
+
 <?php
 	class API {
 		function helloworld () {
